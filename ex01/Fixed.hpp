@@ -2,7 +2,7 @@
 #define FIXED_H
 #include <iostream>
 #include <string>
-
+#include <cmath>
 class Fixed
 {
     public:

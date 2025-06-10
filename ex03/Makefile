@@ -1,8 +1,8 @@
-NAME = ExTwo
+NAME = ExThree
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Wall -std=c++98
 
-SRC = Fixed.cpp main.cpp
+SRC = Fixed.cpp main.cpp Point.cpp bsp.cpp
 OBJS = $(SRC:.cpp=.o)
 all: $(NAME)
 

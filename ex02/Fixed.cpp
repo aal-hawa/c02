@@ -14,7 +14,6 @@ Fixed::~Fixed()
 Fixed::Fixed(const Fixed& other)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	// _rawBits = other._rawBits;
 	*this = other;
 }
 
@@ -111,7 +110,6 @@ Fixed& Fixed::operator++()
 Fixed Fixed::operator++(int)
 {
 	Fixed temp(*this);
-	// temp._rawBits ++; why not this?
 	_rawBits++;
 	return temp;
 }
@@ -124,8 +122,7 @@ Fixed& Fixed::operator--()
 
 Fixed Fixed::operator--(int)
 {
-		Fixed temp(*this);
-	// temp._rawBits --; why not this?
+	Fixed temp(*this);
 	_rawBits--;
 	return temp;
 }

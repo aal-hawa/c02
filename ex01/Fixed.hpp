@@ -1,7 +1,6 @@
 #ifndef FIXED_H
 #define FIXED_H
 #include <iostream>
-#include <string>
 #include <cmath>
 class Fixed
 {
@@ -17,7 +16,8 @@ class Fixed
         void setRawBits( int const raw );
         float toFloat( void ) const;
         int toInt( void ) const;
-        private:
+
+    private:
         int _rawBits;
         static const int _fractional = 8;
 }; 

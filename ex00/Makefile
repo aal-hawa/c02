@@ -1,4 +1,4 @@
-NAME = MyFirstClassinOrthodoxCanonicalForm
+NAME = ExZero
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Wall -std=c++98
 
@@ -7,7 +7,7 @@ OBJS = $(SRC:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		$(CXX) $(OBJS) -o $(NAME)
+		$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
